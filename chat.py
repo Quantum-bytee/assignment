@@ -5,9 +5,9 @@ from pdf_parser import parse_pdf
 from extractor import llm_extract, extract_and_summary_prompt, chat_qa_prompt_template
 import re
 
-st.set_page_config(page_title="GeM Tender Chatbot")
+st.set_page_config(page_title="GeM Tender assignment")
 
-st.title("📄 GeM Tender Chatbot")
+st.title("GeM Tender assignment")
 
 uploaded_file = st.file_uploader("Upload a PDF file", type=["pdf"])
 
@@ -52,7 +52,6 @@ if uploaded_file is not None:
         st.subheader("Extracted Data (JSON):")
         st.json(extracted_data)
 
-    # ✅ Chat input
     st.subheader("Ask a question about this tender:")
     user_question = st.text_input("Your question:")
 
