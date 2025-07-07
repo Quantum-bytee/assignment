@@ -1,0 +1,12 @@
+Given the following tender document text, extract these fields in JSON format:
+- Bid Number
+- Bid Offer Validity
+- Organization Name
+- Bid Opening Date
+- Bid End Date
+- Item Category
+- Quantity
+- Buyer Organization Name
+
+Text:
+{{TEXT}}
