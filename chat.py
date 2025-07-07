@@ -5,9 +5,9 @@ from pdf_parser import parse_pdf
 from extractor import llm_extract, extract_and_summary_prompt, chat_qa_prompt_template
 import re
 
-st.set_page_config(page_title="GeM Tender assignment")
+st.set_page_config(page_title="GeM Tender Parser")
 
-st.title("GeM Tender assignment")
+st.title("GeM Tender Parser")
 
 uploaded_file = st.file_uploader("Upload a PDF file", type=["pdf"])
 
